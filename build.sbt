@@ -7,9 +7,9 @@ lazy val root = (project in file("."))
     name := "scala_field",
     scalaVersion := "2.13.5",
     libraryDependencies ++= Seq(
-      "org.scalameta" %% "scalameta" % "4.4.10",
       "com.github.dwickern" %% "scala-nameof" % "3.0.0",
       "org.scala-lang" % "scala-reflect" % scalaVersion.value,
+      "org.scalatest" %% "scalatest" % "3.2.7" % Test,
     ),
     scalacOptions ++= Seq(
       "-language:experimental.macros"
