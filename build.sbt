@@ -1,4 +1,4 @@
-import ReleaseTransformations._
+import sbtrelease.ReleaseStateTransformations._
 
 ThisBuild / organization := "com.github.ryota0624"
 
@@ -46,8 +46,6 @@ releaseProcess := Seq[ReleaseStep](
   setReleaseVersion,
   commitReleaseVersion,
   tagRelease,
-  releaseStepCommandAndRemaining("+publishSigned"),
-  releaseStepCommand("sonatypeBundleRelease"),
   setNextVersion,
   commitNextVersion,
 )
