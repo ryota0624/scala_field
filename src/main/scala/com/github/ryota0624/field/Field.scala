@@ -14,7 +14,7 @@ object FieldOfMacroImpl {
     import com.github.dwickern.macros.NameOfImpl
     val nameExpr = NameOfImpl.nameOf(c)(expr)
     c.Expr(q"""
-         import field_of.Field
+         import com.github.ryota0624.field.Field
          Field(${expr}, ${nameExpr})
        """)
   }
