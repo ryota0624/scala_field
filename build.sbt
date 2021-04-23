@@ -27,3 +27,5 @@ releaseProcess := Seq[ReleaseStep](
   setNextVersion,
   commitNextVersion,
 )
+
+// test
